@@ -8,11 +8,22 @@
                 <div class="card-body">
                     <form action="/signup" method="post">
                         <div class="form-group">
-                            <input type="text" name="fullname" placeholder="Nombre completo" class="form-control" autofocus>
+                            <input type="text" name="fullname" placeholder="Nombre completo" class="form-control alias"
+                                autofocus>
                         </div>
                         <div class="form-group">
                             <input type="text" name="username" placeholder="Usuario" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <select class="custom-select" name="rol" required> 
+                                <option value="">Selecciona rol</option>
+                                <option value="1">Administrador</option>
+                                <option value="2">Caja</option>
+                                <option value="3">Usuario</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                        <p></p>
                         <div class="form-group">
                             <input type="password" name="password" placeholder="Contraseña" class="form-control">
                         </div>
